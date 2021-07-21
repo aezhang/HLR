@@ -30,6 +30,7 @@ function App() {
   const [revealed, setRevealed] = useState(false);
   
   useEffect(() => {
+    document.title = "Handwritten Letter Recognizer"
     const canvas = canvasRef.current;
     const size = Math.min(window.innerHeight, window.innerWidth)
     const csize = 250;

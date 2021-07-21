@@ -15,7 +15,7 @@ function ConfidenceList(props) {
   return (
     <>
       <div className={`wall ${revealed? 'slide': ''}`}></div>
-      <div>
+      <div className="bar-container">
         <p>Tensorflow's prediction: {props.prediction}</p>
         {Object.keys(props.confidences).map((key) => (
             <BarElement key={key} label={key} val={props.confidences[key]}/>

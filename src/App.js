@@ -212,8 +212,10 @@ function App() {
         </table>
       </div>
 
-      <div className="ConfidenceList">
-        <ConfidenceList revealed={revealed} confidences={tfconfidences} prediction={tfprediction} />
+      <div className="wrapper">
+        <div className="ConfidenceList">
+          <ConfidenceList revealed={revealed} confidences={tfconfidences} prediction={tfprediction} />
+        </div>
       </div>
 
       <div className="right-sidebar">

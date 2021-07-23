@@ -86,6 +86,7 @@ function App() {
       fetch("https://ul2efbv4q2.execute-api.us-west-1.amazonaws.com", requestOptions)
       .then(response => response.json())
       .then(response => {
+        console.log(response);
         setSymbols(response.symbols || []);
         setTFConfidences(response.tfconfidences);
         setTFPrediction(response.tfresponse);
